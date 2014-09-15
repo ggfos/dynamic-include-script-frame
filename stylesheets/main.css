@@ -1,0 +1,91 @@
+body {
+    font-size: 16px;
+    font-family: "Open Sans", serif;
+    background: transparent;
+    /*background-color: #6B747A !important;*/
+    background-image: url("../image/17.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#logo {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.txt {
+    text-align: center;
+    font-size: 14px;
+    font-family: '΢���ź�';
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.wh {
+    height: 70%;
+}
+
+.mt {
+    margin-top: 10px;
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
+.chat {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.scrollspy-pane {
+    position: relative;
+    height: 600px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.scrollspy-chat-pane {
+    position: relative;
+    height: 630px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.opacity {
+    -moz-opacity: 0.93; /* FF 3.5以下 */
+    opacity: 0.93; /* FF 3.5及以上 */
+    filter: alpha(opacity=93); /* IE6及以上 */
+    background: #fff;
+}
+
+.noopacity {
+    background-color: transparent;
+    color: #fff;
+}
+
+.menu {
+    width: 18px;
+    height: 18px;
+}
+
+.pad-within {
+    padding: 10px;
+}
+
+.mag-within {
+    margin: 10px;
+}
+
+.mag-top {
+    margin-top: 80px;
+}
+
+.mag-left {
+    margin-left: 20px;
+}
+
+.n_w {
+    width: 126px !important;
+}

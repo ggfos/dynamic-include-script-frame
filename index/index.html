@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>Api Console Beta | bootstrap</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../image/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/login.css">
+    <link rel="stylesheet" href="../stylesheets/profile.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!--base-js-->
+    <script src="../plugins/jquery/1.0.2/jquery.js"></script>
+    <script src="../plugins/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="../js/config/initCore.js"></script>
+    <script src="../js/util/util.js"></script>
+    <script src="../js/dao/dao.js"></script>
+    <script src="../js/config/config.js"></script>
+
+    <script src="../js/view/viewer.js"></script>
+    <script src="../js/routes.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/extractor.js"></script>
+
+    <!--service-->
+    <script src="../js/service/accountService.js"></script>
+    <script src="../js/service/snsService.js"></script>
+    <script src="../js/service/discoverService.js"></script>
+    <script src="../js/service/relationshipService.js"></script>
+    <script src="../js/service/mobileService.js"></script>
+    <script src="../js/service/infoService.js"></script>
+    <script src="../js/service/systemService.js"></script>
+    <script src="../js/service/eventsService.js"></script>
+
+</head>
+<body onload="init()">
+
+<!--start option list-->
+<div class="col-sm-3 col-md-3 mag-top" id="menu_float_pane">
+    <div class="panel panel-info opacity">
+        <!--start title menu-->
+        <div class="panel-heading">
+            <div class="panel-title">
+                Api Menu
+                <!--<span class="pull-right glyphicon glyphicon-cog cur menu" onclick="alert('小样,给你按钮你就点击!!')"></span>-->
+                <span class="pull-right glyphicon glyphicon-new-window cur menu" title="打开会话窗口"
+                      onclick="showChat()"></span>
+
+            </div>
+        </div>
+        <!--stop title menu-->
+        <div class="panel-body">
+            <ul class="nav nav-tabs" role="tablist" id="navigator">
+                <li class="dropdown" id="navigator_li">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">更多<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" id="navigator_li_ul">
+                    </ul>
+                </li>
+            </ul>
+            <!--start tab content-->
+            <div class="tab-content" id="show_pane">
+            </div>
+            <!--stop tab content-->
+        </div>
+    </div>
+    <span class="pull-right glyphicon glyphicon-circle-arrow-right cur menu" onclick="pollingForward();"
+          title="切换到下一张图片"></span>
+    <span class="pull-right glyphicon glyphicon-circle-arrow-left cur menu" onclick="pollingBack();"
+          title="切换到上一张图片">&nbsp;</span>
+    <span class="pull-right glyphicon glyphicon-exclamation-sign cur menu" onclick="alert('谢谢您的反馈');"
+          title=""></span>
+</div>
+<!--stop option list-->
+
+<!--start chat window-->
+<div class="col-sm-9 col-md-9 mag-top" id="chat_float_pane">
+    <div class="panel panel-info opacity">
+        <!--start chat window title-->
+        <div class="panel-heading txt">
+            Developer Console
+            <span class="pull-left glyphicon glyphicon-trash cur menu" onclick="clearMsg();">&nbsp;</span>
+            <span class="pull-right glyphicon glyphicon-off cur menu" onclick="closeChat();">&nbsp;</span>
+        </div>
+        <!--stop chat window title-->
+        <!--start chat window panel-->
+        <div class="panel-body chat" data-target="#navbar-example2">
+            <div class="well scrollspy-chat-pane" data-offset="6" data-spy="scroll" id="return-alert">
+            </div>
+        </div>
+        <!--stop chat window panel-->
+    </div>
+</div>
+<!--stop chat window-->
+<!--<footer class="mag-left">
+    <span class="pull-left glyphicon glyphicon-circle-arrow-left cur menu" onclick="pollingBack();"
+          title="切换到上一张图片">&nbsp;</span>
+    <span class="pull-left glyphicon glyphicon-circle-arrow-right cur menu" onclick="pollingForward();"
+          title="切换到下一张图片"></span>
+    <span class="pull-left glyphicon glyphicon-exclamation-sign cur menu" onclick="alert('谢谢您的反馈');"
+          title=""></span>
+</footer>-->
+</body>
+</html>

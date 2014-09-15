@@ -1,0 +1,51 @@
+.headref {
+    width: 35px;
+    height: 35px;
+    margin-top: 8px;
+}
+
+.userref {
+    width: 55px;
+    height: 55px;
+}
+
+.profileref {
+    width: 70px;
+    height: 70px;
+    margin-top: 80px;
+}
+
+.nick {
+    color: #ffffff;
+}
+
+.visref {
+    width: 35px;
+    height: 35px;
+}
+
+.snsicon2 {
+    width: 20px;
+    height: 20px;
+}
+
+.cur {
+    cursor: pointer;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tit {
+    background-color: #6B747A;
+}
+
+.liicon {
+    height: 20px;
+    width: 22px;
+}

@@ -1,0 +1,91 @@
+<!--start events_newEvent panel-->
+<div class="panel panel-default"
+     onmouseover="initValue('events_newEvent_startTime',(new Date()).getTime() + (24 * 3 * 3600 * 1000))">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#events" href="#events_newEvent">添加新活动</a>
+        </h4>
+    </div>
+    <!--start events_newEvent input panel-->
+    <div class="control-group panel-collapse list-group collapse in mag-within" id="events_newEvent">
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">name</span>
+            <input type="text" id="events_newEvent_name" class="form-control" value="Disrupt" placeholder="eg. Disrupt">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">pier</span>
+            <input type="text" id="events_newEvent_pier" class="form-control" value="NY-2014" placeholder="eg. NY-2014">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">desc</span>
+            <input type="text" id="events_newEvent_desc" class="form-control"
+                   value="TechCrunch Disrupt is one of the most anticipated technology conferences of the year"
+                   placeholder="eg. TechCrunch Disrupt is one of the most anticipated technology conferences of the year">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">location</span>
+            <input type="text" id="events_newEvent_loc" class="form-control" value="San Francisco"
+                   placeholder="eg. San Francisco">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">startTime</span>
+            <input type="text" id="events_newEvent_startTime" class="form-control" name="timestamp"
+                   placeholder="eg. 1409044998698" required>
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">lastTime</span>
+            <input type="text" id="events_newEvent_lastTime" class="form-control" value="4" placeholder="eg. 4">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">roles</span>
+            <input type="text" id="events_newEvent_roles" class="form-control" value="Investor,Vistor,Reportor"
+                   placeholder="eg. Investor,Vistor,Reportor">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">distance</span>
+            <input type="text" id="events_newEvent_distance" class="form-control"
+                   value="2000"
+                   placeholder="eg. 2000"> <span class="input-group-addon">/米</span>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">picture</span>
+            <input type="text" id="events_newEvent_picture" class="form-control"
+                   value="http://avatar.csdn.net/1/6/2/1_kongjing0815.jpg"
+                   placeholder="eg. http://avatar.csdn.net/1/6/2/1_kongjing0815.jpg">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">banners</span>
+            <input type="text" id="events_newEvent_banners" class="form-control"
+                   value="http://avatar.csdn.net/1/6/2/1_kongjing0815.jpg"
+                   placeholder="eg. http://avatar.csdn.net/1/6/2/1_kongjing0815.jpg">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">longitude</span>
+            <input type="text" id="events_newEvent_longitude" class="form-control" value="116.3"
+                   placeholder="eg. 116.3">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon alert-info n_w">latitude</span>
+            <input type="text" id="events_newEvent_latitude" class="form-control" value="39.3"
+                   placeholder="eg. 39.3">
+        </div>
+
+        <!-- Split button -->
+        <div class="input-group">
+            <button type="button" onclick="addNewEventFn();" class="btn btn-info">添加</button>
+        </div>
+
+    </div>
+    <!--stop events_newEvent input panel-->
+</div>
+<!--stop events_newEvent panel-->
